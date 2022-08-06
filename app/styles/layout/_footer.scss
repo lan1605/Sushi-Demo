@@ -1,0 +1,277 @@
+.footer{
+    min-height: 800px;
+    background-color: black;
+    color: white;
+    font-family: $primary-font;
+    font-weight: 400;
+    &-content{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 0 91.5px;
+        padding-top: 200px;
+        min-height: 10rem;
+        
+    }
+    &-text{
+        width: 40%;
+        &__content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 31px;
+            margin-bottom: 30px;
+        }
+        &__desc{
+            width: 70%;
+            font-size: 23px;
+            // margin-top: -18rem;
+            line-height: 1.4;
+        }
+        &__social{
+            margin-top: 4rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: row;
+        }
+        &__icon{
+            width: 40px;
+            height: 4rem;
+            font-size: 23px;
+            border-radius: 50%;
+            background-color: white;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:not(:first-child){
+                margin-left: 13px;
+            }
+        }
+    }
+    &-about{
+        &__content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 31px;
+        }
+        &__list{
+            padding-top: 33px;
+            cursor: pointer;
+        }
+        &__item{
+            font-size: 23px;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    &-services{
+        &__content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 31px;
+        }
+        &__list{
+            padding-top: 33px;
+            cursor: pointer;
+        }
+        &__item{
+            font-size: 23px;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    }&-other{
+        &__content{
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        &__title{
+            font-size: 31px;
+            // display: flex;
+            // align-items: stretch;
+            // justify-content: flex-start;
+            margin-top: -90px;
+        }
+        &__list{
+         margin-top: 30px;
+         cursor: pointer;
+        }
+        &__item{
+            font-size: 23px;
+            &:not(:last-child){
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    @media screen and (max-width:1023px){
+        &-content{
+            min-height: 650px;
+            padding:0 5rem;
+            padding-top: 0;
+        }
+        &-text{
+            width: 50%;
+            &__title{
+                font-size: 25px;
+                margin-bottom: 18rem;
+            }
+            &__desc{
+                font-size: 20px;
+                margin-top: -15rem;
+            }
+            &__social{
+                margin-top: 3rem;
+            }
+            &__icon{
+                width: 3rem;
+                height: 3rem;
+                font-size: 20px;
+            }
+        }
+        &-about{
+            &__title{
+                font-size: 25px;
+            }
+            &__list{
+                padding-top: 33px;
+            }
+            &__item{
+                font-size: 20px;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        &-services{
+            margin: 0 1rem;
+            &__title{
+                font-size: 25px;
+            }
+            &__list{
+                padding-top: 33px;
+            }
+            &__item{
+                font-size: 20px;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+        &-other{
+            &__title{
+                font-size: 25px;
+                margin-top: -60px;
+            }
+            &__list{
+                margin-top: 30px;
+            }
+            &__item{
+                font-size: 20px;
+                &:not(:last-child){
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:767px){
+        &-content{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+            padding: 10rem 10rem;
+        }
+        &-text{
+            width: 100%;
+            &__title{
+                width: 100%;
+                text-align: center;
+                font-weight: 700;
+            }
+            &__desc{
+                width: 100%;
+                text-align: center;
+            }
+            &__social{
+                margin: 3rem auto;
+            }
+        }
+        &-about{
+            padding-bottom: 4rem;
+            &__content{
+                width: 100%;
+            }
+            width: 100%;
+            &__title{
+                width: 100%;
+                font-weight: 700;
+                text-align: center;
+            }
+            &__list{
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 3rem;
+            }
+            &__item{
+                text-align: center;
+            }
+        }
+        &-services{
+            padding-bottom: 4rem;
+            &__content{
+                width: 100%;
+            }
+            &__title{
+                width: 100%;
+                text-align: center;
+                font-weight: 700;
+            }
+            &__list{
+                width: 100%;
+                margin: 0 auto;
+                padding-top: 3rem;
+            }
+            &__item{
+                text-align: center;
+            }
+    }
+    &-other{
+        &__content{
+            width: 100%;
+        }
+        &__title{
+            width: 100%;
+            text-align: center;
+            margin-top: 0;
+            font-weight: 700;
+        }
+        &__list{
+            width: 100%;
+            margin: 0 auto;
+            padding-top: 3rem;
+        }
+        &__item{
+            text-align: center;
+        }
+}
+}
+}

@@ -1,0 +1,162 @@
+.popular{
+    min-height: 800px;
+    width: 100%;
+    background-image: url(../images/img_popular_shape1.png),
+      url(../images/img_popular_shape2.png),
+      url(../images/img_popular_shape3.png),
+      url(../images/img_popular_shape4.png),
+      url(../images/img_popular_shape5.png),
+      url(../images/img_popular_shape2.png),
+      linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color, 1));
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: bottom 90px left 0,
+       bottom 60px right 0,
+       bottom 30rem right 1.5rem ,
+       top -4rem right,
+       top 1.5rem left 25rem,
+       top 15rem left 10rem,
+       center;
+    color: white;
+    &-title{
+        text-align: center;
+        display: block;
+        padding-top: 93px;
+        font-family: $primary-font;
+        font-size: 64px;
+        font-weight: 700;
+        padding-bottom: 30px;
+    }
+    &-desc{
+        padding: 0 30rem;
+        text-align: center;
+        font-family: $primary-font;
+        font-weight: 400;
+        font-size: 25px;
+        padding-bottom: 100px;
+    }
+    &-list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2rem;
+        margin: 0 auto;
+        width: 960px;
+        // display: flex;
+        // align-items: center;
+        // justify-content: center;
+        // list-style: none;
+        // align-items: center;
+        min-height: 200px;
+        
+    }
+    &-item{
+        // width: calc(100% / 3);
+        text-align: center;
+        font-family: $primary-font;
+        // &:nth-child(2){
+        //     margin: auto 10rem;
+        // }
+        &-title{
+            margin: 2.5rem 0;
+            font-weight: 700;
+            font-size: 28px;
+        }
+        &-desc{
+            font-weight: 400;
+            font-size: 17px;
+        }
+        &-img{
+            margin: 0 auto;
+            flex-shrink: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1023px){
+    .popular{
+        width: 100%;
+        min-height: 650px;
+        &-title{
+            padding-top: 80px;
+            font-size: 50px;
+            padding-bottom: 25px;   
+        }
+        &-desc{
+            font-size: 15px;
+            padding: 0 20rem;
+            padding-bottom: 50px;
+        }
+        &-list{
+            width: 750px;
+            margin: 0 auto;
+        }
+        &-item{
+            &-title{
+                font-size: 21px;
+                margin: 2rem 0;
+            }
+            &-desc{
+                font-size: 14px;
+            }
+            &-img{
+                width: 90%;
+            }
+        }
+    }
+}
+@media screen and (max-width: 767px){
+    .popular{
+        min-height: 600px;
+        // width: max-content;
+        background-image: url(../images/img_popular_shape1.png),
+        url(../images/img_popular_shape2.png),
+        url(../images/img_popular_shape3.png),
+        url(../images/img_popular_shape4.png),
+        url(../images/img_popular_shape2.png),
+        linear-gradient(to right, rgba($primary-color, 1), rgba($primary-color, 1));
+        background-repeat: no-repeat;
+        background-position: bottom 90px left 0,
+         bottom 60px right 0,
+         bottom 30rem right 1.5rem ,
+         top -8rem right,
+         top 15rem left 10rem,
+         center;
+         &-item{
+			width: 100%;
+			// margin-bottom: 2.5rem;
+			scroll-snap-align: center;
+            margin: 3rem 0;
+		}
+		&-list{
+            margin-top: 5rem;
+            width: 300px;
+            min-height: 100px;
+			grid-auto-columns: 80%;
+			grid-template-columns: unset;
+			grid-row-gap: 20rem;
+			grid-auto-flow: column;
+			overflow-x: auto;
+			scroll-snap-type: x mandatory;
+			scroll-snap-stop:always ;
+			@include hideScroll;
+		}
+    &-title{
+        font-size: 40px;
+        padding-top: 60px;
+        padding-bottom: 20px;
+
+    }
+    &-desc{
+        padding: 0 3rem;
+    }
+
+    // &-item{
+    //     width: 90%;
+        
+	// 	scroll-snap-align: center;
+    //     height: 30rem;
+    //     &-img{
+    //         width: 100%;
+    //     }
+
+       }
+    }

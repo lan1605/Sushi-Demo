@@ -1,0 +1,143 @@
+.sushi{
+    min-height: 750px;
+    background-image: url(../images/img_sushi_shape1.png),
+      url(../images/img_sushi_shape1.png),
+      url(../images/img_sushi_shape3.png),
+      url(../images/img_sushi_shape4.png),
+      url(../images/img_sushi_shape5.png),
+      linear-gradient(to right, rgba($secondary-color, 1), rgba($secondary-color, 1));
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: bottom 50px left 40px,
+       top 30px right 40px,
+       bottom 60px right -10px,
+       top 11rem right 560px,
+       top 11rem left 8rem,
+       center;
+       &-img{
+        flex-shrink: 0;
+       }
+       &-item{
+        padding-left: 135px;
+        padding-right: 100px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 150px;
+       }
+       &-content{
+        font-family: $primary-font;
+        color: $primary-color;
+
+        &-title{
+          padding-top: 8rem;
+          font-size: 75px;
+          font-weight: 700;
+          padding-bottom: 6rem;
+        }
+        &-desc{
+          font-size: 30px;
+          font-weight: 400;
+          padding-bottom: 6rem;
+          line-height: 1 ;
+        }
+        &-link{
+          width: 330px;
+          height: 50px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 25px;
+          color: white;
+          text-transform: uppercase;
+          background-color: $primary-color;
+          border-radius: 50px;
+          font-weight: 700;
+        }
+       }
+}
+@media screen and (max-width:1023px){
+  .sushi{
+    background-image: url(../images/img_sushi_shape1.png),
+      url(../images/img_sushi_shape1.png),
+      url(../images/img_sushi_shape3.png),
+      url(../images/img_sushi_shape4.png),
+      url(../images/img_sushi_shape5.png),
+      linear-gradient(to right, rgba($secondary-color, 1), rgba($secondary-color, 1));
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: bottom 50px left 40px,
+       top 30px right 20px,
+       bottom 60px right -10px,
+       top 11rem right 415px,
+       top 11rem left 8rem,
+       center;
+    min-height: 550px;
+    &-item{
+      padding-top: 90px;
+      grid-column-gap: 2rem;
+    }
+    &-img{
+      margin: 0 auto;
+    }
+    &-content{
+      &-title{
+        padding-top: 6rem;
+        font-size: 55px;
+        padding-bottom: 5rem;
+      }
+      &-desc{
+        font-size: 16px;
+        padding-bottom: 5rem;
+      }
+      &-link{
+        width: 200px;
+        height: 35px;
+        font-size: 16px;
+      }
+    }
+  }
+}
+@media screen and (max-width:767px){
+  .sushi{
+    min-height: 650px;
+    background-image: url(../images/img_sushi_shape1.png),
+      url(../images/img_sushi_shape1.png),
+      url(../images/img_sushi_shape3.png),
+      url(../images/img_sushi_shape5.png),
+      linear-gradient(to right, rgba($secondary-color, 1), rgba($secondary-color, 1));
+      background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+      background-position: bottom 50px left -10px,
+       top 30px right 40px,
+       bottom 60px right -70px,
+       top 11rem left 5rem,
+       center;
+    &-item{
+      display: block;
+      padding: 0 50px;
+      padding-top: 5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+    &-content{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 6rem;
+      &-title{
+        padding-top: 4rem;
+        font-size: 40px;
+        padding-bottom: 3rem;
+      }
+      &-desc{
+        font-size: 15px;
+        text-align: center;
+        padding-bottom: 3rem;
+      }
+      &-link{
+        font-size: 15px;
+      }
+    }
+
+  }
+}
